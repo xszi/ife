@@ -24,8 +24,8 @@
 ###### [flexbox方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout3_3.html)########[代码](https://github.com/xszi/ife/blob/master/20180525_layout3_3.html)
 
 ##### 实现一个三栏布局，左侧，右侧固定宽度，中间根据浏览器宽度进行自适应变化
-###### [float方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180524_layout4_1.html)########[代码](https://github.com/xszi/ife/blob/master/20180524_layout4_1.html)
-###### [双飞翼布局](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180524_layout4_2.html)########[代码](https://github.com/xszi/ife/blob/master/20180524_layout4_2.html)
-###### [圣杯布局](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180524_layout4_3.html)########[代码](https://github.com/xszi/ife/blob/master/20180524_layout4_3.html)
-###### [flex-box方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180524_layout4_4.html)########[代码](https://github.com/xszi/ife/blob/master/20180524_layout4_4.html)
-###### [position方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180524_layout4_5.html)########[代码](https://github.com/xszi/ife/blob/master/20180524_layout4_5.html)
+###### [float方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout4_1.html)########[代码](https://github.com/xszi/ife/blob/master/20180525_layout4_1.html)
+###### [双飞翼布局](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout4_2.html)########[代码](https://github.com/xszi/ife/blob/master/20180525_layout4_2.html)
+###### [圣杯布局](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout4_3.html)########[代码](https://github.com/xszi/ife/blob/master/20180525_layout4_3.html)
+###### [flex-box方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout4_4.html)########[代码](https://github.com/xszi/ife/blob/master/20180525_layout4_4.html)
+###### [position方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout4_5.html)########[代码](https://github.com/xszi/ife/blob/master/20180525_layout4_5.html)
