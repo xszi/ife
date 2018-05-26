@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>实现一个两栏布局，左侧占30%宽度，右侧占70%宽度T</title>
+    <style>
+        html,body,#content {
+            font-family: sans-serif;
+            height: 100%;
+        }
+
+        #content{
+            display: flex;
+        }
+
+        #left{
+            width: 30%;
+            height: 100%;
+            background: coral;
+        }
+        #right{
+            width: 70%;
+            height: 100%;
+            background: cornflowerblue;
+        }
+
+    </style>
+</head>
+<body>
+<div id="content">
+    <div id="left">
+        <h1>flexbox方法</h1>
+    </div>
+    <div id="right"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现一个两栏布局，左侧占30%宽度，右侧占70%宽度T</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        #left{
+            width: 30%;
+            height: 100%;
+            background: coral;
+            position: absolute;
+        }
+
+        #right{
+            width: 70%;
+            height: 100%;
+            background: cornflowerblue;
+            margin-left: 30%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>position方法</h1>
+    <div id="left"></div>
+    <div id="right"></div>
+</body>
+</html>
