@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圣杯布局实现一个三栏布局，左侧，右侧固定宽度，中间根据浏览器宽度进行自适应变化</title>
+    <style>
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+
+        #container{
+            padding-left: 300px;
+            padding-right: 300px;
+            height: 100%;
+            background: cadetblue;
+        }
+
+        #container .column{
+            position: relative;
+            height: 100%;
+            float: left;
+        }
+
+        #center{
+            width: 100%;
+            background: coral;
+        }
+
+        #left{
+            width: 300px;
+            margin-left: -100%;
+            right: 300px;
+            background: greenyellow;
+        }
+
+        #right{
+            width: 300px;
+            background: blue;
+            margin-right: -300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="center" class="column">中间部分</div>
+        <div id="left" class="column">左边</div>
+        <div id="right" class="column">右边</div>
+    </div>
+</body>
+</html>

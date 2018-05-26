@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-box实现一个三栏布局，左侧，右侧固定宽度，中间根据浏览器宽度进行自适应变化</title>
+    <style>
+        html,body, #container, .column{
+            margin: 0;
+            height: 100%;
+        }
+
+        #center{
+            width: 100%;
+            background: coral;
+        }
+
+        #left{
+            width: 300px;
+            background: greenyellow;
+        }
+
+        #right{
+            width: 300px;
+            background: blue;
+        }
+
+        #container{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="left" class="column">左边</div>
+        <div id="center" class="column">中间部分</div>
+        <div id="right" class="column">右边</div>
+    </div>
+</body>
+</html>
