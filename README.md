@@ -29,3 +29,8 @@
 ###### [圣杯布局](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout4_3.html)########[代码](https://github.com/xszi/ife/blob/master/20180525_layout4_3.html)
 ###### [flex-box方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout4_4.html)########[代码](https://github.com/xszi/ife/blob/master/20180525_layout4_4.html)
 ###### [position方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout4_5.html)########[代码](https://github.com/xszi/ife/blob/master/20180525_layout4_5.html)
+
+##### 实现一个三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化
+###### [float方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout5_1.html)########[代码](https://github.com/xszi/ife/blob/master/20180525_layout5_1.html)
+###### [position方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout5_2.html)########[代码](https://github.com/xszi/ife/blob/master/20180525_layout5_2.html)
+###### [flexbox方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout5_3.html)########[代码](https://github.com/xszi/ife/blob/master/20180525_layout5_3.html)

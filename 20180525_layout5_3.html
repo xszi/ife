@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-box方法实现一个三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+
+        #left,
+        #center{
+            width: 300px;
+            height: 100%;
+        }
+
+        #left{
+            background: #a0b3d6;
+        }
+
+        #center{
+            background: #a60000;
+        }
+
+        #right{
+            height: 100%;
+            width: 100%;
+            background: #ffe6b8;
+        }
+
+        body{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="left">左边</div>
+    <div id="center">中间部分</div>
+    <div id="right">右边</div>
+
+</body>
+</html>
