@@ -10,3 +10,7 @@
 ###### [float方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180524_layout1_1.html)
 ###### [position方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180524_layout1_2.html)
 ###### [flexbox方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180524_layout1_3.html)
+##### 实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化
+###### [float方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180524_layout2_1.html)
+###### [position方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180524_layout2_2.html)
+###### [flexbox方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180524_layout2_3.html)
