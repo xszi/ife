@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>参考设计稿实现HTML页面及CSS样式</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            width: 100%;
+            height:100px;
+            background:#333;
+        }
+
+        .center{
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .logo{
+            float: left;
+            font-size: 28px;
+            font-family: "Microsoft YaHei";
+            line-height: 100px;
+            color:#FFF;
+        }
+
+        .hnav{
+            float: right;
+            margin-top: 5px;
+        }
+
+        .hnav li{
+            display: inline;
+            margin-left: 10px;
+            text-decoration: underline;
+            cursor: pointer;
+            color:#FFF;
+        }
+
+        #banner{
+            width: 100%;
+            height: 400px;
+            background: #66BB33;
+        }
+
+        #cliboxs{
+            float: right;
+
+        }
+        .clibox{
+            width: 30px;
+            height: 30px;
+            border: solid 1px #272822;
+            float: left;
+            margin-top: 360px;
+            margin-left: 10px;
+            font-size: 16px;
+            color: #333 ;
+            text-align: center;
+            line-height: 30px;
+            background: #B2DD99;
+            cursor: pointer;
+        }
+
+        #selectedbox{
+            background:#FFF;
+            margin-top: 350px;
+            padding-top: 10px;
+        }
+
+        nav{
+            width: 100%;
+            height: 80px;
+            border-bottom: solid 1px #CDCDCD;
+        }
+
+        .category{
+            width: 120px;
+            height:50px;
+            border: solid 1px #CDCDCD;
+            border-bottom: none;
+            border-top-left-radius:25px;
+            border-top-right-radius:25px;
+            float: left;
+            display: inline;
+            margin-top: 30px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 50px;
+            background: #EEE;
+            cursor: pointer;
+        }
+
+        #selectedcg{
+            background: #FFF;
+        }
+
+        article{
+            width: 100%;
+            padding: 80px;
+            margin: 10px;
+            border: solid 1px #D7D7D7;
+        }
+
+        section{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        article{
+            flex:1;
+            /*每个元素的宽度至少是40px*/
+        }
+
+        footer{
+            width: 100%;
+            height: 100px;
+            background: #666;
+            color: #FFF;
+            text-align: center;
+        }
+
+        footer p{
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="logo">Logo</div>
+            <div class="hnav">
+                <ul>
+                    <li>Github</li>
+                    <li>Register</li>
+                    <li>Login</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="banner">
+        <div id="bhav" class="center">
+            <div id="cliboxs">
+                <div class="clibox">1</div>
+                <div id="selectedbox" class="clibox">2</div>
+                <div class="clibox">3</div>
+                <div class="clibox">4</div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="center">
+            <div id="selectedcg" class="category">HOME</div>
+            <div class="category">PROFILE</div>
+            <div class="category">ABOUT</div>
+        </div>
+    </nav>
+    <div class="center">
+        <section>
+            <article>This is content1</article>
+            <article>MaybeContent2</article>
+            <article>Content3</article>
+        </section>
+        <section>
+            <article>Content4</article>
+            <article>Content5</article>
+            <article>Content6</article>
+            <article>Content7</article>
+        </section>
+        <section>
+            <article>Content8</article>
+            <article>Content9</article>
+            <article>Content10</article>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2018 ife.baidu.com</p>
+    </footer>
+</body>
+</html>

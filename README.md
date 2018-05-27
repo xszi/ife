@@ -34,3 +34,6 @@
 * [float方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout5_1.html)[`代码`](https://github.com/xszi/ife/blob/master/20180525_layout5_1.html)
 * [position方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout5_2.html)[`代码`](https://github.com/xszi/ife/blob/master/20180525_layout5_2.html)
 * [flexbox方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout5_3.html)[`代码`](https://github.com/xszi/ife/blob/master/20180525_layout5_3.html)
+
+##### 参考设计稿实现HTML页面及CSS样式
+* [实现结果](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180527_layout6.html)[`代码`](https://github.com/xszi/ife/blob/master/20180527_layout6.html)
