@@ -99,23 +99,33 @@
             background: #FFF;
         }
 
-        article{
-            width: 100%;
+        .content {
+            width: 960px;
+            margin:auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .content div {
             padding: 80px;
             margin: 10px;
-            border: solid 1px #D7D7D7;
+            text-align: center;
+            border:1px solid #d0d0d0;
         }
 
-        section{
-            display: flex;
-            flex-direction:row;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        .content .size_1 {
+            flex: 100px;
         }
 
-        article{
-            flex:1;
-            /*每个元素的宽度至少是40px*/
+        .content .size_2 {
+            flex: 50px;
+
+        }
+
+        .content .size_2 p {
+            width: 48px;
+            white-space: nowrap;
+
         }
 
         footer{
@@ -161,23 +171,17 @@
             <div class="category">ABOUT</div>
         </div>
     </nav>
-    <div class="center">
-        <section>
-            <article>This is content1</article>
-            <article>MaybeContent2</article>
-            <article>Content3</article>
-        </section>
-        <section>
-            <article>Content4</article>
-            <article>Content5</article>
-            <article>Content6</article>
-            <article>Content7</article>
-        </section>
-        <section>
-            <article>Content8</article>
-            <article>Content9</article>
-            <article>Content10</article>
-        </section>
+    <div class="content">
+        <div class="size_1"><p>This is Content 1</p></div>
+        <div class="size_1"><p>Maybe Content 2</p></div>
+        <div class="size_1"><p>Content 3</p></div>
+        <div class="size_2"><p>Content 4</p></div>
+        <div class="size_2"><p>Content 5</p></div>
+        <div class="size_2"><p>Content 6</p></div>
+        <div class="size_2"><p>Content 7</p></div>
+        <div class="size_1"><p>Content 8</p></div>
+        <div class="size_1"><p>Content 9</p></div>
+        <div class="size_1"><p>Content 10</p></div>
     </div>
     <footer>
         <p>&copy; 2018 ife.baidu.com</p>
