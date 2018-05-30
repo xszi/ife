@@ -37,3 +37,6 @@
 
 ##### 参考设计稿实现HTML页面及CSS样式
 * [实现结果](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180527_layout6.html)[`代码`](https://github.com/xszi/ife/blob/master/20180527_layout6.html)
+
+##### 来做一个漂亮的网站
+* [实现结果](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180528web.html)[`代码`](https://github.com/xszi/ife/blob/master/20180528web.html)
