@@ -1,5 +1,5 @@
 # ife
-##百度前端技术学院作业
+## 百度前端技术学院作业
 
 #### [第1天：flag](https://xszi.github.io/ife/class1_flag.html)[`代码`](https://github.com/xszi/ife/blob/master/class1_flag.html)
 
