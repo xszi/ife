@@ -1,12 +1,12 @@
 # ife
 百度前端技术学院作业
 
-#### [第1天作业——flag](https://xszi.github.io/ife/class1_flag.html)[`代码`](https://github.com/xszi/ife/blob/master/class1_flag.html)
+#### [第1天作业：flag](https://xszi.github.io/ife/class1_flag.html)[`代码`](https://github.com/xszi/ife/blob/master/class1_flag.html)
 
-#### [第2-4天作业——个人简历](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/class2-4_resume.html)[`代码`](https://github.com/xszi/ife/blob/master/class2-4_resume.html)
-#### [第5-6天作业——个人简历](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/class5-6_resume.html)[`代码`](https://github.com/xszi/ife/blob/master/class5-6_resume.html)
+#### [第2-4天作业：个人简历](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/class2-4_resume.html)[`代码`](https://github.com/xszi/ife/blob/master/class2-4_resume.html)
+#### [第5-6天作业：个人简历](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/class5-6_resume.html)[`代码`](https://github.com/xszi/ife/blob/master/class5-6_resume.html)
 
-#### 第7-8天作业——学习布局
+#### 第7-8天：学习布局
 
 ##### 实现一个两栏布局，左侧占30%宽度，右侧占70%宽度
 * [float方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180524_layout1_1.html)[`代码`](https://github.com/xszi/ife/blob/master/20180524_layout1_1.html)
@@ -35,8 +35,13 @@
 * [position方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout5_2.html)[`代码`](https://github.com/xszi/ife/blob/master/20180525_layout5_2.html)
 * [flexbox方法](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180525_layout5_3.html)[`代码`](https://github.com/xszi/ife/blob/master/20180525_layout5_3.html)
 
-##### 参考设计稿实现HTML页面及CSS样式
+#####  参考设计稿实现HTML页面及CSS样式
 * [实现结果](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180527_layout6.html)[`代码`](https://github.com/xszi/ife/blob/master/20180527_layout6.html)
 
-##### 来做一个漂亮的网站
+##### 第九天到第十一天：来做一个漂亮的网站
 * [实现结果](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180528web.html)[`代码`](https://github.com/xszi/ife/blob/master/20180528web.html)
+
+##### 第十二天到第十五天 复杂页面的实现
+
+##### 第十六天：开始感受js的乐趣---动态简历
+* [实现结果](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/resume.html)[`代码`](https://github.com/xszi/ife/blob/master/resume.html)
