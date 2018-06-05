@@ -38,10 +38,10 @@
 ######  参考设计稿实现HTML页面及CSS样式
 * [实现结果](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180527_layout6.html)[`代码`](https://github.com/xszi/ife/blob/master/20180527_layout6.html)
 
-#### 第九天到第十一天：来做一个漂亮的网站
+### 第九天到第十一天：来做一个漂亮的网站
 * [实现结果](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/20180528web.html)[`代码`](https://github.com/xszi/ife/blob/master/20180528web.html)
 
-#### 第十二天到第十五天 复杂页面的实现
+### 第十二天到第十五天 复杂页面的实现
 
-#### 第十六天：开始感受js的乐趣---动态简历
+### 第十六天：开始感受js的乐趣---动态简历
 * [实现结果](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/resume.html)[`代码`](https://github.com/xszi/ife/blob/master/resume.html)
