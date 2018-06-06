@@ -45,3 +45,9 @@
 
 ### 第十六天：开始感受js的乐趣---动态简历
 * [实现结果](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/resume.html)[`代码`](https://github.com/xszi/ife/blob/master/resume.html)
+
+### 第十七天到第十八天：“如果”可以“重来”
+* [十进制整数转化为二进制](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/dec2bin.html)[`代码`](https://github.com/xszi/ife/blob/master/dec2bin.html)
+* [3的小游戏](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/game-of-three.html)[`代码`](https://github.com/xszi/ife/blob/master/game-of-three.html)
+* [九九乘法表](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/9x9table.html)[`代码`](https://github.com/xszi/ife/blob/master/9x9table.html)
+* [简历+问候](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/resume_greet.html)[`代码`](https://github.com/xszi/ife/blob/master/resume_greet.html)
