@@ -51,3 +51,7 @@
 * [3的小游戏](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/game-of-three.html)[`代码`](https://github.com/xszi/ife/blob/master/game-of-three.html)
 * [九九乘法表](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/9x9table.html)[`代码`](https://github.com/xszi/ife/blob/master/9x9table.html)
 * [简历+问候](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/resume_greet.html)[`代码`](https://github.com/xszi/ife/blob/master/resume_greet.html)
+
+### 第十九天：找到那个DOM
+* [查找元素练习](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/find-element.html)[`代码`](https://github.com/xszi/ife/blob/master/resume_greet.html)
+* [查找元素练习-advanced](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/find-element-advanced.html)[`代码`](https://github.com/xszi/ife/blob/master/resume_greet.html)
