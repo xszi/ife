@@ -16,10 +16,10 @@
     var opvalue = 100;//为什么这个值一定要是全局的
     fade_btn.onclick = function(){
         if(fade_btn.innerHTML == "淡出"){
-            st1 = setInterval(fadeOut,30);
+            st1 = setTimeout(fadeOut,10);
             fade_btn.disabled = true;
         }else{
-            st2 = setInterval(fadeIn,30);
+            st2 = setTimeout(fadeIn,10);
             fade_btn.disabled = true;
         }
     }
@@ -28,10 +28,12 @@
         opvalue--;
         fade_obj.style.opacity = opvalue/100;
         if (opvalue <= 0) {
-            clearInterval(st1);
+            clearTimeout(st1);
             fade_btn.innerHTML = "淡入";
             fade_btn.disabled = false;
-            }
+        }else{
+            st1 = setTimeout(fadeOut,30);
+        }
     }
 
     function fadeIn() {
@@ -39,9 +41,11 @@
         fade_obj.style.opacity = opvalue/100;
         fade_btn.disabled = true;
         if (opvalue >= 100) {
-            clearInterval(st2);
+            clearTimeout(st2);
             fade_btn.innerHTML = "淡出";
             fade_btn.disabled = false;
+        }else{
+            st2 = setTimeout(fadeIn,30);
         }
     }
 </script>

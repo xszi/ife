@@ -18,23 +18,30 @@
     </style>
 </head>
 <body>
-    <div id="imgbox">
-        <div id = "img"></div>
-    </div>
+    <div id = "img"></div>
 <script>
-    var st1 = setInterval(movetoImg,100)
+    var img = document.getElementById("img");
     var y = 0;
+    var st1;
+    var st2;
+    st1 = setInterval(movetoImg,100);
     function movetoImg() {
-        var img = document.getElementById("img");
-        if(y > -8160){
-            img.style.backgroundPositionY = y + "px";
-            y = y - 480;
-        }else{
+        y = y - 480;
+        img.style.backgroundPositionY = y + "px";
+        if(y <= -7680){
             clearInterval(st1);
+            st2 = setInterval(movebackImg,100);
         }
     }
-
-    //存在一个问题，循环结束后图片会闪一下，体验不好，怎么优化？
+    function movebackImg() {
+        y = y + 480;
+        img.style.backgroundPositionY = y + "px";
+        if(y >= 0){
+            clearInterval(st2);
+            st1=setInterval(movetoImg,100);
+        }
+    }
+//要搞清楚它的总y值应该是8160-480，超过这个值便不在正确范围了，会出现闪一下的情况。
 </script>
 </body>
 </html>

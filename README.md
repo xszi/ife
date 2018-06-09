@@ -61,5 +61,6 @@
 * [可见隐藏](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/vishidden.html)[`代码`](https://github.com/xszi/ife/blob/master/vishidden.html)
 * [事件设置样式](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/eventstyle.html)[`代码`](https://github.com/xszi/ife/blob/master/eventstyle.html)
 * [事件委托设置样式](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/eventstyledelegate.html)[`代码`](https://github.com/xszi/ife/blob/master/eventstyledelegate.html)
-* [setInterval+setTimeout](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/intervalout.html)[`代码`](https://github.com/xszi/ife/blob/master/intervalout.html)
+* [setInterval渐变](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/intervalout.html)[`代码`](https://github.com/xszi/ife/blob/master/intervalout.html)
+* [setTimeout渐变](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/settimeout.html)[`代码`](https://github.com/xszi/ife/blob/master/settimeout.html)
 * [IFE2016中Erik笑容的动画](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/Eric-animation.html)[`代码`](https://github.com/xszi/ife/blob/master/Eric-animation.html)
