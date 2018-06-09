@@ -53,5 +53,13 @@
 * [简历+问候](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/resume_greet.html)[`代码`](https://github.com/xszi/ife/blob/master/resume_greet.html)
 
 ### 第十九天：找到那个DOM
-* [查找元素练习](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/find-element.html)[`代码`](https://github.com/xszi/ife/blob/master/resume_greet.html)
-* [查找元素练习-advanced](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/find-element-advanced.html)[`代码`](https://github.com/xszi/ife/blob/master/resume_greet.html)
+* [查找元素练习](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/find-element.html)[`代码`](https://github.com/xszi/ife/blob/master/find-element.html)
+* [查找元素练习-advanced](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/find-element-advanced.html)[`代码`](https://github.com/xszi/ife/blob/master/find-element-advanced.html)
+
+### 第二十天到第二十一天：让你和页面对话
+* [简单提交](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/simplesubmit.html)[`代码`](https://github.com/xszi/ife/blob/master/simplesubmit.html)
+* [可见隐藏](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/vishidden.html)[`代码`](https://github.com/xszi/ife/blob/master/vishidden.html)
+* [事件设置样式](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/eventstyle.html)[`代码`](https://github.com/xszi/ife/blob/master/eventstyle.html)
+* [事件委托设置样式](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/eventstyledelegate.html)[`代码`](https://github.com/xszi/ife/blob/master/eventstyledelegate.html)
+* [setInterval+setTimeout](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/intervalout.html)[`代码`](https://github.com/xszi/ife/blob/master/intervalout.html)
+* [IFE2016中Erik笑容的动画](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/Eric-animation.html)[`代码`](https://github.com/xszi/ife/blob/master/Eric-animation.html)

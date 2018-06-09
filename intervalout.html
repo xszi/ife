@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>setInterval和setTimeout练习</title>
+</head>
+<body>
+    <div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+    <button id="fade-btn">淡出</button>
+</body>
+
+<script>
+    var fade_btn = document.getElementById("fade-btn");
+    fade_btn.addEventListener("click",showOut);
+    function showOut() {
+        var fade_obj = document.getElementById("fade-obj");
+        var num1 = 100;
+        var st = setInterval(function(){
+            num1--;
+            fade_obj.style.opacity = num1/100;
+            fade_btn.disabled=true;
+            if (num1<0) {
+                clearInterval(st);
+                fade_btn.disabled=false;
+                fade_btn.innerHTML="淡入";
+                fade_btn.addEventListener("click",showIn);
+            }
+        },30)
+    }
+    function showIn() {
+            var fade_obj = document.getElementById("fade-obj");
+            var num1 = 0;
+            var st = setInterval(function(){
+                num1++;
+                fade_obj.style.opacity = num1/100;
+                fade_btn.disabled=true;
+                if (num1>100) {
+                    clearInterval(st);
+                    fade_btn.disabled=false;
+                    fade_btn.innerHTML="淡出";
+                    fade_btn.addEventListener("click",showOut);
+                }
+            },30);
+    }
+</script>
+</html>

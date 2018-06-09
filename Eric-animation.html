@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> IFE2016中Erik笑容的动画</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #img{
+            width: 480px;
+            height: 480px;
+            position: absolute;
+            background: url(images/erik_ce204002.jpg);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div id="imgbox">
+        <div id = "img"></div>
+    </div>
+<script>
+    var st1 = setInterval(movetoImg,100)
+    var y = 0;
+    function movetoImg() {
+        var img = document.getElementById("img");
+        if(y > -8160){
+            img.style.backgroundPositionY = y + "px";
+            y = y - 480;
+        }else{
+            clearInterval(st1);
+        }
+    }
+
+    //存在一个问题，循环结束后图片会闪一下，体验不好，怎么优化？
+</script>
+</body>
+</html>

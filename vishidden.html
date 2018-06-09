@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>控制元素的显示及隐藏</title>
+    <style>
+        select {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <label>
+        <input id="school" name="status" type="radio">
+        School
+    </label>
+    <label>
+        <input id="company" name="status" type="radio">
+        Company
+    </label>
+
+    <select id="school-select">
+        <option>北京邮电大学</option>
+        <option>黑龙江大学</option>
+        <option>华中科技大学</option>
+    </select>
+
+    <select id="company-select">
+        <option>百度</option>
+        <option>爱奇艺</option>
+    </select>
+<script>
+    var school=document.getElementById("school");
+    school.onclick=function () {
+        document.getElementById("school-select").style.visibility="visible";
+        document.getElementById("company-select").style.visibility="hidden";
+    }
+    var company=document.getElementById("company");
+    company.onclick=function () {
+        document.getElementById("company-select").style.visibility="visible";
+        document.getElementById("school-select").style.visibility="hidden";
+    }
+
+</script>
+</body>
+</html>
