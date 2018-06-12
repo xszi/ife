@@ -24,50 +24,59 @@
             "Music": 88
         }
     }
-    var result1 = [];
-    var result2 = [];
-    //将json对象分成两个数组
-    for (var i in scoreObject) {
-        result1.push(i);
-        result2.push(scoreObject[i])
+
+    var scoreArray = [];
+    for(var key in scoreObject){
+        scoreArray.push([key,scoreObject[key].Math,scoreObject[key].English,scoreObject[key].Music]);
     }
+    console.log(scoreArray);
+    //Json.stringify得到给定值的JSON字符串
+    console.log(JSON.stringify(scoreArray));
+
+//    var result1 = [];
+//    var result2 = [];
+    //将json对象分成两个数组
+//    for (var i in scoreObject) {
+//        result1.push(i);
+//        result2.push(scoreObject[i])
+//    }
 //    console.log(result1);//["Tony", "Simon", "Annie"]
 //    console.log(result2);//[{…}, {…}, {…}]
 
     //再将result2数组里面的对象组成一个大数组
-    var allArr = [];
-    for(i=0;i<result2.length;i++){
-        for (var j in result2[i]) {
-            allArr.push(j);
-            allArr.push(result2[0][j])
-        }
-    }
+//    var allArr = [];
+//    for(i=0;i<result2.length;i++){
+//        for (var j in result2[i]) {
+//            allArr.push(j);
+//            allArr.push(result2[0][j])
+//        }
+//    }
 //    console.log(allArr);//["Math", 95, "English", 79, "Music", 68, "Math", 95, "English", 79, "Music", 68, "Math", 95, "English", 79, "Music", 68]
 
     //过滤掉数组非数字项
-    var arrfilter = [];
-    for(i=1;i<allArr.length;i=i+2){
-        arrfilter.push(allArr[i]);
-    }
+//    var arrfilter = [];
+//    for(i=1;i<allArr.length;i=i+2){
+//        arrfilter.push(allArr[i]);
+//    }
 //    console.log(arrfilter);//[95, 79, 68, 95, 79, 68, 95, 79, 68]
 
     //将数组按元素个数分成一个数组
-    var result = split_array(arrfilter,result1.length);
-    //过滤函数
-    function split_array(arr, len){
-        var a_len = arr.length;
-        var result = [];
-        for(var i=0;i<a_len;i+=len){
-            result.push(arr.slice(i,i+len));
-        }
-        return result;
-    }
+//    var result = split_array(arrfilter,result1.length);
+//    //过滤函数
+//    function split_array(arr, len){
+//        var a_len = arr.length;
+//        var result = [];
+//        for(var i=0;i<a_len;i+=len){
+//            result.push(arr.slice(i,i+len));
+//        }
+//        return result;
+//    }
 
     //两个数组组合得到结果
-    for(i=0;i<result1.length;i++){
-        result[i].unshift(result1[i]);
-    }
-    console.log(result);
+//    for(i=0;i<result1.length;i++){
+//        result[i].unshift(result1[i]);
+//    }
+//    console.log(result);
 
 
 </script>
