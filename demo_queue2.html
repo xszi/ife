@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用数组来实现队列</title>
+</head>
+<body>
+<input id="queue-input" type="text">
+<p id="queue-cont">队列内容：apple-&gt;pear</p>
+<button id="in-btn">入队</button>
+<button id="out-btn">出队</button>
+<button id="font-btn">打印队头元素内容</button>
+<button id="empty-btn">判断队列是否为空</button>
+<script>
+    var queue = ["apple", "pear"];
+    var queue_out = document.getElementById("queue-cont");
+    var in_btn = document.getElementById("in-btn");
+    var out_btn = document.getElementById("out-btn");
+    var font_btn = document.getElementById("font-btn");
+    var empty_btn = document.getElementById("empty-btn");
+    in_btn.onclick = function () {
+        var queue_input = document.getElementById("queue-input").value;
+        if(queue_input == ""){
+            queue_out.innerHTML = "未输入";
+        }else {
+            queue.push(queue_input);
+            queuecontent();
+        }
+    }
+    out_btn.onclick = function () {
+        queue.shift();
+        queuecontent();
+    }
+
+    font_btn.onclick = function () {
+        if(queue.length == 0){
+            queue_out.innerHTML = "队列为空";
+        }else {
+            queue_out.innerHTML = "队头元素：" + queue[0];
+        }
+    }
+    empty_btn.onclick = function () {
+        if(queue.length == 0){
+            queue_out.innerHTML = "队列为空";
+        }else {
+            queuecontent();
+        }
+    }
+
+    //使用join将数组用“<-”连接输出
+    function queuecontent() {
+        queue_out.innerHTML ="队列内容：" + queue.join("<-");
+    }
+
+
+
+
+
+
+</script>
+</body>
+</html>

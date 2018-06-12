@@ -64,3 +64,16 @@
 * [setInterval渐变](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/intervalout.html)[`代码`](https://github.com/xszi/ife/blob/master/intervalout.html)
 * [setTimeout渐变](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/settimeout.html)[`代码`](https://github.com/xszi/ife/blob/master/settimeout.html)
 * [IFE2016中Erik笑容的动画](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/Eric-animation.html)[`代码`](https://github.com/xszi/ife/blob/master/Eric-animation.html)
+
+### 第二十二天到第二十四天：JavaScript里面的居民们
+* [数字Math](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_number.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_number.html)
+* [字符串一](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_string1.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_string1.html)
+* [字符串二](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_string2.html)[`代码`](https://github.com/xszi/ife/blob/master/eventstyle.html)
+* [队列一](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_queue1.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_queue1.html)
+* [队列二](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_queue2.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_queue2.html)
+* [栈一](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_stack1.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_stack1.html)
+* [栈二](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_stack2.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_stack2.html)
+* [对象！！！](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_object.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_object.html)
+* [排序](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_sort.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_sort.html)
+* [对象转数组](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_objtoarr.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_objtoarr.html)
+* [数组转对象](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_arrtoobj.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_arrtoobj.html)

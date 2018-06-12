@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串操作-1</title>
+</head>
+<body>
+    <div>
+        <label>String A:
+            <input id="radio-a" type="radio" checked="true" name="str-obj" value="a">
+        </label>
+        <textarea id="str-a"></textarea>
+        <label>String B:
+            <input id="radio-b" type="radio" name="str-obj" value="b">
+        </label>
+        <textarea id="str-b"></textarea>
+        <label>Num A：<input id="num-a" type="number" value="0"></label>
+        <label>Num B：<input id="num-b" type="number" value="1"></label>
+    </div>
+    <div>
+        <button  id="getLength">获取当前选中输入的内容长度</button>
+        <button id="getStr">当前选中输入中的第3个字符</button>
+        <button id="toConcat">把两个输入框的文字连接在一起输出（concat）</button>
+        <button id="getBIndex">输入B中的内容，在输入A的内容中第一次出现的位置（indexOf）</button>
+        <button id="getAIndex">输入A中的内容，在输入B的内容中最后一次出现的位置（lastIndexOf）</button>
+        <button id="toSlice">使用slice获取选中输入框内容的部分内容，参数为num-a及num-b</button>
+        <button id="getRowNum">当前选中输入框的行数</button>
+        <button id="toSubstr">使用substr获取选中输入框内容的子字符串，参数为num-a及num-b</button>
+        <button id="toUpperCase">把所选输入框中的内容全部转为大写</button>
+        <button id="toLowerCase">把所选输入框中的内容全部转为小写</button>
+        <button id="clearBlank">把所选输入框中内容的半角空格全部去除</button>
+        <button id="toReplace">把所选输入框中内容的a全部替换成另外一个输入框中的内容</button>
+    </div>
+    <p id="result"></p>
+<script>
+    var radio_a = document.getElementById("radio-a");
+    var radio_b = document.getElementById("radio-b");
+    var str_a = document.getElementById("str-a");
+    var str_b = document.getElementById("str-b");
+    var div_click = document.getElementsByTagName("div")[1];
+    var res = document.getElementById("result");
+    div_click.addEventListener("click",function (e) {
+        var e = e||window.event;
+        var target = e.target||e.srcElement;
+        if(target&&target.nodeName == "BUTTON"){
+            switch (target.id){
+                case "getLength":getLength();
+                    break;
+                case "getStr":getStr();
+                    break;
+                case "toConcat":toConcat();
+                    break;
+                case "getBIndex":getBIndex();
+                    break;
+                case "getAIndex":getAInex();
+                    break;
+                case "toSlice":toSlice();
+                    break;
+                case "getRowNum":getRowsNum();
+                    break;
+                case "toSubstr":toSubstr();
+                    break;
+                case "toUpperCase":toUpperCase();
+                    break;
+                case "toLowerCase":toLowerCase();
+                    break;
+                case "clearBlank":clearBlank();
+                    break;
+                case "toReplace":toReplace();
+                    break;
+                default:break;
+            }
+        }
+        function getLength() {
+            if(radio_a.checked){
+                if(str_a.value != ""){
+                    res.innerHTML = str_a.value.length;
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }else{
+                if(str_b.value != ""){
+                    res.innerHTML = str_b.value.length;
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }
+        }
+
+        function getStr() {
+            if(radio_a.checked){
+                if(str_a.value != ""){
+                    res.innerHTML = str_a.value.slice(2,3);
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }else if(radio_b.checked){
+                if(str_b.value != ""){
+                    res.innerHTML = str_b.value.slice(2,3);
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }else{
+                res.innerHTML = "请选择单选框";
+            }
+        }
+
+        function toConcat() {
+            res.innerHTML = str_a.value.concat(str_b.value);
+        }
+
+        function getBIndex() {
+            if(str_a.value == ""||str_b.value == ""){
+                res.innerHTML = "请在A框或B框输入字符"
+            }else{
+                if(str_a.value.indexOf(str_b.value) != -1){
+                    res.innerHTML = str_a.value.indexOf(str_b.value);
+                }else{
+                    res.innerHTML = "A中不含B";
+                }
+            }
+        }
+
+        function getAInex() {
+            if(str_a.value == ""||str_b.value == ""){
+                res.innerHTML = "请在A框或B框输入字符"
+            }else{
+                if(str_b.value.indexOf(str_a.value) != -1){
+                    res.innerHTML = str_b.value.lastIndexOf(str_a.value);
+                }else{
+                    res.innerHTML = "B中不含A";
+                }
+            }
+        }
+
+        function toSlice() {
+            if(radio_a.checked){
+                if(str_a.value != ""){
+                    res.innerHTML = str_a.value.slice(1,3);
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }else{
+                if(str_b.value != ""){
+                    res.innerHTML = str_b.value.slice(1,3);
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }
+        }
+
+        function getRowsNum() {
+            if(radio_a.checked){
+                if(str_a.value != ""){
+                    //1、需要有换行符
+                    //2、需要固定textarea的宽，不能会行数会随宽度变化
+                    res.innerHTML = str_a.value.split("\n").length;
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }else if(radio_b.checked){
+                if(str_b.value != ""){
+                    res.innerHTML = str_b.value.split("\n").length;
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }else{
+                res.innerHTML = "请选择单选框";
+            }
+        }
+
+        function toSubstr() {
+            if(radio_a.checked){
+                if(str_a.value != ""){
+                    //substr(indexstart,number)
+                    res.innerHTML = str_a.value.substr(2,3);
+                    //substring(indexstart,indexend)
+                    console.log(str_a.value.substring(2,3));
+
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }else if(radio_b.checked){
+                if(str_b.value != ""){
+                    res.innerHTML = str_b.value.substr(2,3);
+                    console.log(str_b.value.substring(2,3));
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }else{
+                res.innerHTML = "请选择单选框";
+            }
+        }
+
+        function toUpperCase() {
+            if(radio_a.checked){
+                if(str_a.value != ""){
+                    res.innerHTML = str_a.value.toUpperCase();
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }else{
+                if(str_b.value != ""){
+                    res.innerHTML = str_b.value.toUpperCase();
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }
+        }
+        
+        function toLowerCase() {
+            if(radio_a.checked){
+                if(str_a.value != ""){
+                    res.innerHTML = str_a.value.toLowerCase();
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }else{
+                if(str_b.value != ""){
+                    res.innerHTML = str_b.value.toLowerCase();
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }
+        }
+        
+        function clearBlank() {
+            if(radio_a.checked){
+                if(str_a.value != ""){
+                    res.innerHTML = str_a.value.replace(/\s/gi,'');
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }else{
+                if(str_b.value != ""){
+                    res.innerHTML = str_b.value.replace(/\s/gi,'');
+                }else {
+                    res.innerHTML = "请输入一个字符串";
+                }
+            }
+        }
+
+        function toReplace() {
+            if(radio_a.checked){
+                if(str_a.value != ""&&str_a.value.indexOf('a') != -1){
+                    res.innerHTML = str_a.value.replace(/a/gi,str_b.value);
+                }else {
+                    res.innerHTML = "A中不存在a";
+                }
+            }else{
+                if(str_b.value != ""&&str_b.value.indexOf('a') != -1){
+                    res.innerHTML = str_b.value.replace(/a/gi,str_a.value);
+                }else {
+                    res.innerHTML = "B中不存在a";
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>
