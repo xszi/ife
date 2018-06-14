@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算时间差值</title>
+</head>
+<body>
+<div id="select">
+    <select id="year-select">
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2018">2018</option>
+        <option value="2032">2002</option>
+    </select>
+
+    <select id="month-select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+
+    <select id="day-select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+    </select>
+
+    <select id="hour-select">
+        <option value="0">00</option>
+        <option value="1">01</option>
+        <option value="2">02</option>
+        <option value="3">03</option>
+        <option value="4">04</option>
+        <option value="5">05</option>
+        <option value="6">06</option>
+        <option value="7">07</option>
+        <option value="8">08</option>
+        <option value="9">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+
+    </select>
+
+    <select id="minute-select">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option>30</option>
+        <option>35</option>
+        <option>40</option>
+        <option>45</option>
+        <option>50</option>
+        <option>55</option>
+        <option>56</option>
+        <option>57</option>
+        <option>58</option>
+        <option>59</option>
+    </select>
+
+    <select id="second-select">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option>30</option>
+        <option>35</option>
+        <option>40</option>
+        <option>45</option>
+        <option>50</option>
+        <option>55</option>
+        <option>56</option>
+        <option>57</option>
+        <option>58</option>
+        <option>59</option>
+        <option>59</option>
+    </select>
+</div>
+
+
+<p id="result-wrapper">现在距离 2001年1月1日星期X HH:MM:SS 还有 X 天 X 小时 X 分 X 秒</p>
+
+<p id="today"></p>
+<script>
+    var result_wrapper = document.getElementById("result-wrapper");
+    var select = document.getElementById("select");
+    var year_select = document.getElementById("year-select");
+    var month_select = document.getElementById("month-select");
+    var day_select = document.getElementById("day-select");
+    var hour_select = document .getElementById("hour-select");
+    var minute_select = document.getElementById("minute-select");
+    var second_select = document.getElementById("second-select");
+    var todayTime =document.getElementById("today");
+    select.onchange = function (e) {
+        var year = Number(year_select.value);
+        var month = Number(month_select.value);
+        var day = Number(day_select.value);
+        var day_p = DaysInSomeMonth(day,month,year);
+        var hour = Number(hour_select.value);
+        var minute = Number(minute_select.value);
+        var second = Number(second_select.value);
+
+        //获取当前时间
+        var today = new Date();
+        var yearNow = today.getFullYear();
+        var monthNow = today.getMonth() + 1;
+        var dayNow = today.getDate();
+        var hoursNow = today.getHours();
+        var minuteNow = today.getMinutes();
+        var secondNow = today.getSeconds();
+
+        //计算总秒数
+        var secondsCount = second + minute*60 + hour*3600;
+        var secondsNowCount = secondNow + minuteNow*60 + hoursNow*3600;
+        var calSecondsCount = calSecond(secondsCount,secondsNowCount);
+        console.log(calSecondsCount);
+        //计算总天数
+        //2008-07-01
+        //2018-06-14
+
+        if(calSecondsCount>0){
+            var calDaysCount = calDaysThisYear(day,month,year);
+            console.log(calDaysCount);
+        }else{
+            var calDaysCount = calDaysThisYear(day,month,year)-1;
+            console.log(calDaysCount);
+        }
+        result_wrapper.innerHTML = "现在距离" + year + "年" + month + "月" + day_p + "日" + " " + addZero(hour) + ":" + addZero(minute) + ":" + addZero(second) + " " + "已经过去/还有" + "calDay" + "天";
+
+        todayTime.innerHTML = today;
+    }
+
+    //得到特定年特定月有多少天可选
+    function DaysInSomeMonth(day,month,year) {
+        var day_p;
+        if(month == 2){
+            if(isLeap(year)){
+                if(day>0&&day<30){
+                    day_p = day;
+                }
+            }else if(!isLeap(year)){
+                if(day>0&&day<29){
+                    day_p = day;
+                }
+            }else {
+                day_p = day;
+            }
+        }else if(month==4||month==6||month==9||month==11){
+            if(day>0&&day<31){
+                day_p = day;
+            }
+        }else {
+            day_p = day;
+        }
+        return day_p;
+    }
+    //判断闰年
+    function isLeap( year) {
+        if(year%4==0&&year%100!=0||year%400==0){
+            return true
+        }else{
+            return false;
+        }
+    }
+    //存在个位数添‘0’
+    function addZero(x) {
+        if(x>=0&&x<10){
+            return "0" + x;
+        }else{
+            return x;
+        }
+    }
+    //计算总秒数
+    function calSecond(x,y){
+        return y-x;
+    }
+
+    function getEveryMonthDays(month,year) {
+        var days;
+        if(month == 2){
+            if(isLeap(year)){
+                days = 29;
+            }else if(!isLeap(year)){
+                days = 28;
+            }
+        }else if(month==4||month==6||month==9||month==11){
+            days = 30;
+        }else {
+            days = 31;
+        }
+        return days;
+    }
+    //计算某年已经过去的天数
+    function calDaysThisYear(day_p,month,year) {
+        var daysThisYear = day_p;
+        console.log(daysThisYear,month);
+        for(i=1; i< month;i++){
+            daysThisYear += getEveryMonthDays(i,year);
+            console.log(getEveryMonthDays(i,year));
+        }
+        return daysThisYear;
+    }
+
+    console.log()
+</script>
+</body>
+</html>

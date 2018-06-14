@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单的小时钟</title>
+</head>
+<body>
+<P id="time1"></P>
+<P id="time2"></P>
+<script>
+
+    var time1 = document.getElementById("time1");
+    var time2 = document.getElementById("time2");
+
+    function togetday1(day) {
+        switch (day){
+            case 1:
+                return "星期一";
+            case 2:
+                return "星期二";
+            case 3:
+                return "星期三";
+            case 4:
+                return "星期四";
+            case 5:
+                return "星期五";
+            case 6:
+                return "星期六";
+            case 7:
+                return "星期日";
+        }
+    }
+    function toGetday2(day) {
+        switch (day){
+            case 1:
+                return "Monday";
+            case 2:
+                return "Tuesday";
+            case 3:
+                return "Wednesday";
+            case 4:
+                return "Thursday";
+            case 5:
+                return "Friday";
+            case 6:
+                return "Saturday";
+            case 7:
+                return "Sunday";
+        }
+    }
+    function getAMorPM(hour) {
+        if(hour>0&&hour<12){
+            return "AM";
+        }else{
+            return "PM";
+        }
+    }
+    function addZero(x) {
+        if(x>0&&x<10){
+            return "0" + x;
+        }else {
+            return x;
+        }
+    }
+
+    function getNowtime1() {
+        var today = new Date();
+
+        //得到年月日，星期几
+        var year = today.getFullYear();
+        var month = today.getMonth()+1;
+        var date = today.getDate();
+        var day = today.getDay();
+        //得到小时
+        var hour = today.getHours();
+        var clock = today.toTimeString().slice(0,8);
+
+        var nowTime = year + "年" + addZero(month) + "月" + addZero(date) + "日" + togetday1(day) + " " + clock;
+        time1.innerHTML = nowTime;
+
+        var st = setTimeout("getNowtime1()",1000);
+    }
+    function getNowtime2() {
+        var today = new Date();
+
+        //得到年月日，星期几
+        var year = today.getFullYear();
+        var month = today.getMonth()+1;
+        var date = today.getDate();
+        var day = today.getDay();
+        //得到小时
+        var hour = today.getHours();
+        //得到当前时间，还可以通过其他方法，如getMinutes,getSeconds等方法加字符串拼凑得到
+        var clock = today.toTimeString().slice(0,8);
+
+        var nowTime = year + '-' + addZero(month) + "-" + addZero(date) + " " + toGetday2(day) + " " + clock + " " + getAMorPM(hour);
+        time2.innerHTML = nowTime;
+
+        var st = setTimeout("getNowtime2()",1000);
+    }
+
+    getNowtime1();
+    getNowtime2();
+    //2008-10-10 Monday 07:10:30 PM
+
+</script>
+</body>
+</html>
