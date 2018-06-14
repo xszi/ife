@@ -12,21 +12,21 @@
 
     function GoSteps(n) {
     //null和undefined的区别
-    if(n!=null){
-        if(n > 0){
-            var i = 0;
-            var n = Math.floor(n);
-            while(i<n){
-                Go();
-                i++;
+        if(n!=null){
+            if(n > 0){
+                var i = 0;
+                var n = Math.floor(n);
+                while(i<n){
+                    Go();
+                    i++;
+                }
             }
-        }
-        else{
-            console.log("0");
-        }
-    }else {
-        Go();
-    }
+            else{
+                console.log("0次");
+            }
+        }else {
+            Go();
+//        }
     }
 
     GoSteps(10); // Go 10次

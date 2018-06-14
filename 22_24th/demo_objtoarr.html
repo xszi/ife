@@ -32,8 +32,11 @@
     console.log(scoreArray);
     //Json.stringify得到给定值的JSON字符串
     console.log(JSON.stringify(scoreArray));
+    var foo = {foundation: "Mozilla", model: "box", week: 45, transport: "car", month: 7};
 
-//    var result1 = [];
+    console.log(JSON.stringify(foo,["week","month"]));
+    console.log(JSON.stringify({ a: 2 }, null, "\t"));
+    //    var result1 = [];
 //    var result2 = [];
     //将json对象分成两个数组
 //    for (var i in scoreObject) {

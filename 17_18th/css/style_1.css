@@ -1,0 +1,34 @@
+
+*{padding:0;margin:0}
+
+.resume{
+    margin: 40px 300px;
+    border: solid 1px darkgray;
+}
+
+.base{
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.base li,.base li{
+    display: inline;
+    list-style: none;
+}
+
+.topic{
+    margin-left: 40px;
+}
+
+.first,.topic{
+    font-weight: bold;
+}
+
+.answer{
+    margin-left: 10px;
+}
+
+.perInfo{
+    margin-top: 30px;
+}

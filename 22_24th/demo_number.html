@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>数字Math</title>
+    <title>Title</title>
 </head>
 <body>
     <div>
@@ -29,8 +29,7 @@
     var div_click = document.getElementsByTagName("div")[1];
     //用事件委托
     div_click.onclick = function (e) {
-        var e = e||window.event;
-        var target = e.target||e.srcElement;
+
         //BUTTON需要大写
         if(target&&target.nodeName == "BUTTON"){
             switch (e.target.id){
