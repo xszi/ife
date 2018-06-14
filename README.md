@@ -1,10 +1,10 @@
 # ife
 ## 百度前端技术学院作业
 
-### [第1天：flag](https://xszi.github.io/ife/class1_flag.html)[`代码`](https://github.com/xszi/ife/blob/master/class1_flag.html)
+### [第1天：flag](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/1th/class1_flag.html)[`代码`](https://github.com/xszi/ife/blob/master/1th/class1_flag.html)
 
-### [第2-4天：个人简历](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/class2-4_resume.html)[`代码`](https://github.com/xszi/ife/blob/master/class2-4_resume.html)
-### [第5-6天：个人简历](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/class5-6_resume.html)[`代码`](https://github.com/xszi/ife/blob/master/class5-6_resume.html)
+### [第2-4天：个人简历](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/2_4th/class2-4_resume.html)[`代码`](https://github.com/xszi/ife/blob/master/2_4th/class2-4_resume.html)
+### [第5-6天：个人简历](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/5_6th/class5-6_resume.html)[`代码`](https://github.com/xszi/ife/blob/master/5_6th/class5-6_resume.html)
 
 ### 第7-8天：学习布局
 
