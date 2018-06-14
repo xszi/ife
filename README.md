@@ -80,5 +80,5 @@
 
 ### 第二十五天到第二十七天：倒数开始 滴答滴 滴答滴
 * [GoSteps封装函数，简化逻辑](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_goturn.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_goturn.html)
-* [字符串一](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_clock.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_clock.html)
-* [字符串二](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/cal_time_difference.html)[`代码`](https://github.com/xszi/ife/blob/master/cal_time_difference.html)
+* [简单的时钟](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/demo_clock.html)[`代码`](https://github.com/xszi/ife/blob/master/demo_clock.html)
+* [计算时间差值](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/cal_time_difference.html)[`代码`](https://github.com/xszi/ife/blob/master/cal_time_difference.html)
