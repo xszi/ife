@@ -20,6 +20,10 @@
         #email-sug-wrapper{
             list-style: none;
         }
+
+        .hide{
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -34,26 +38,16 @@
     var email_sug_wrapper = document.getElementById("email-sug-wrapper");
 
     email_input.oninput = function() {
-        email_sug_wrapper.innerHTML = "";
         tipsDisplayControl();
     }
 
-    function tipsDisplayControl() {
-        if (email_input.value == " ") {
-            console.log(email_input.value);
-            //为空就应该把全部隐去
-            tipsBoxHidden();
-        } else {
-            console.log(email_input.value);
-            addTips();
-            tipsBoxVisibility();
-        }
-    }
     function getInputContent() {
         return (email_input.value.trim());
     }
 
     function tipContentPrepare() {
+        //每次更新前将之前的指示框清空
+        email_sug_wrapper.innerHTML = "";
         getInputContent();
         var tipsArr = [];
         for(var item of postfixList) {
@@ -61,6 +55,16 @@
             tipsArr.push(tips);
         }
         return tipsArr;
+    }
+
+    function tipsDisplayControl() {
+        //注意通过value.length来判断输入框是否为空
+        if (email_input.value.length == 0) {
+            tipsBoxHidden();
+        } else {
+            addTips();
+            tipsBoxVisibility();
+        }
     }
 
     function addTips() {
@@ -73,11 +77,11 @@
     }
 
     function tipsBoxHidden() {
-        email_sug_wrapper.style.visibility = "hidden";
+        email_sug_wrapper.className = "hide";
     }
 
     function tipsBoxVisibility() {
-        email_sug_wrapper.style.display = "inline";
+        email_sug_wrapper.className = "";
     }
 
 </script>
