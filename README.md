@@ -82,3 +82,6 @@
 * [GoSteps封装函数，简化逻辑](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/25_27th/demo_goturn.html)[`代码`](https://github.com/xszi/ife/blob/master/25_27th/demo_goturn.html)
 * [简单的时钟](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/25_27th/demo_clock.html)[`代码`](https://github.com/xszi/ife/blob/master/25_27th/demo_clock.html)
 * [计算时间差值](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/25_27th/cal_time_difference.html)[`代码`](https://github.com/xszi/ife/blob/master/25_27th/cal_time_difference.html)
+
+### 第二十八天到第三十天：给爱的人发个邮件吧
+* [邮箱输入框提示](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/28_30th/mailtips.html)[`代码`](https://github.com/xszi/ife/blob/master/28_30th/mailtips.html)
