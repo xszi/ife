@@ -61,28 +61,94 @@
     }
 
     // 假设id和name均不会重复，根据输入name找到对应的id
-    function findIdByName(name) {
+    function findIdByName(name,node) {
+        if(node.name === name){
+            return node.id;
+        }else{
+            if(node.left){
+
+                // 我的第一想法不判断rLeft是否存在，可行吗？
+                // 不行，会存在有左子树，但无name的情况
+                //return (findIdByName(name,node.left));
+                var rLeft = findIdByName(name,node.left);
+                if(rLeft){
+                    return rLeft;
+                }
+            }
+            if(node.right){
+                //return (findIdByName(name,node.right));
+                var rRight = findIdByName(name,node.right);
+                if(rRight){
+                    return rRight;
+                }
+            }
+        }
     }
 
     // 假设id和name均不会重复，根据输入id找到对应的name
-    function findNameById(id) {
+    function findNameById(id,node) {
+        if(node.id === id){
+            return node.name;
+        }else{
+            if(node.left){
+                var rLeft = findNameById(id,node.left);
+                if(rLeft){
+                    return(rLeft);
+                }
+            }
+            if(node.right){
+                var rRight = findNameById(id,node.right);
+                if(rRight){
+                    return(rRight);
+                }
+            }
+        }
 
     }
 
     // 把这个对象中所有的名字以“前序遍历”的方式全部输出到console中
-    function getListWithDLR() {
-
+    function getListWithDLR(node) {
+        console.log(node.name);
+        if(node.left){
+            getListWithDLR(node.left);
+        }
+        if(node.right){
+            getListWithDLR(node.right);
+        }
     }
 
     // 把这个对象中所有的名字以“中序遍历”的方式全部输出到console中
-    function getListWithLDR() {
+    function getListWithLDR(node) {
+        if(node.left){
+            getListWithLDR(node.left);
+        }
+        console.log(node.name);
+        if(node.right){
+            getListWithLDR(node.right);
+        }
 
     }
 
     // 把这个对象中所有的名字以“后序遍历”的方式全部输出到console中
-    function getListWithLRD() {
+    function getListWithLRD(node) {
+        if(node.left){
+            getListWithLRD(node.left);
+        }
+        if(node.right){
+            getListWithLRD(node.right);
+        }
+        console.log(node.name);
 
     }
+
+    console.log(findIdByName("Saber",tree));
+    console.log(findNameById(12,tree));
+    console.log('前序遍历：');
+    getListWithDLR(tree);
+    console.log('中序遍历：');
+    getListWithLDR(tree);
+    console.log('后序遍历：');
+    getListWithLRD(tree);
 </script>
 </body>
 
