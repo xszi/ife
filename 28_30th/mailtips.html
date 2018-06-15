@@ -59,7 +59,7 @@
 
     function tipsDisplayControl() {
         //注意通过value.length来判断输入框是否为空
-        if (email_input.value.length == 0) {
+        if (email_input.value.trim().length === 0) {
             tipsBoxHidden();
         } else {
             addTips();

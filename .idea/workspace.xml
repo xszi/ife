@@ -19,8 +19,8 @@
       <file leaf-file-name="mailtips.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/28_30th/mailtips.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2318">
-              <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+            <state relative-caret-position="988">
+              <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -156,12 +156,12 @@
       <workItem from="1529024033067" duration="8729000" />
       <workItem from="1529044885959" duration="3175000" />
       <workItem from="1529048280182" duration="4079000" />
-      <workItem from="1529053853036" duration="5173000" />
+      <workItem from="1529053853036" duration="5895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21544000" />
+    <option name="totallyTimeSpent" value="22266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="703" y="0" width="1863" height="1412" extended-state="0" />
@@ -257,6 +257,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1180">
+          <caret line="86" column="167" lean-forward="false" selection-start-line="86" selection-start-column="167" selection-end-line="86" selection-end-column="167" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/28_30th/28_30th.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -273,18 +281,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1180">
-          <caret line="86" column="167" lean-forward="false" selection-start-line="86" selection-start-column="167" selection-end-line="86" selection-end-column="167" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/28_30th/mailtips.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2318">
-          <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        <state relative-caret-position="988">
+          <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
           <folding />
         </state>
       </provider>
