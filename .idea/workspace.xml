@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d310e9ce-8ef0-446f-bc3c-7415f86911a3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/28_30th/mailtips.html" afterPath="$PROJECT_DIR$/28_30th/mailtips.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/28_30th/README.md" afterPath="$PROJECT_DIR$/28_30th/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +20,8 @@
         <entry file="file://$PROJECT_DIR$/28_30th/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="546">
-                <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <first_editor relative-caret-position="618">
+                <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -177,12 +176,12 @@
       <workItem from="1529053853036" duration="6677000" />
       <workItem from="1529111117169" duration="23430000" />
       <workItem from="1529195086187" duration="5787000" />
-      <workItem from="1529202179796" duration="1254000" />
+      <workItem from="1529202179796" duration="1352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53519000" />
+    <option name="totallyTimeSpent" value="53617000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="2584" height="1394" extended-state="6" />
@@ -574,8 +573,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="546">
-            <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <first_editor relative-caret-position="618">
+            <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
             <folding />
           </first_editor>
           <second_editor />
