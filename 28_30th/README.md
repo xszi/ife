@@ -1,7 +1,7 @@
 
 
 ### 第二十八天到第三十天：给爱的人发个邮件吧
-* [邮箱输入框提示演示](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/28_30th/mailtips.html)[`代码`](https://github.com/xszi/ife/blob/master/28_30th/mailtips.html)
+* [邮箱输入框提示](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/28_30th/mailtips.html)[`代码`](https://github.com/xszi/ife/blob/master/28_30th/mailtips.html)
 
 ### 小结：
 * 1、输入框空格去除的方法email_input.value.trim();
@@ -23,6 +23,6 @@
 * 10、if...else条件判断的使用;
 * 11、关于up，down键的疑惑：为什么我最开始想象中的up逻辑却是down呢？</br>
     我的理解就是：因为每次页面更新之后，此时已经是按键之后的selectedTipIndex了，按键为现在减一！)
-*景，这次直接复制的代码。
+* 12、加码解码是为了防止XSS（跨站脚本攻击）,还不是很了解,没接触过应用场景，这次直接复制的代码。
 * 13、Esc的使用还是没能选中输入的全部内容。
-* 心得：像其中的“先将按键之前的选定选择框的背景色清除”||“当用户输入发生改变的时候，选择状态都重新切回到第一个提示”||“条件语句if...else和switch的选择”||“email—input.value值老是获取不到（enter）”都花了好长时间都没有解决，但是这些东西在自己休息一下，或是借鉴比人的代码之后就解决了。所以在前进过程中，我们时常会迷失，但是我们需要停下来想一想，或者与别人交流交流，而不是闭门造车。
+* 心得：其中的“先将按键之前的选定选择框的背景色清除”||“当用户输入发生改变的时候，选择状态都重新切回到第一个提示”||“条件语句if...else和switch的选择”||“email—input.value值老是获取不到（enter）”，在完成过程中阻力较大，花了我大部分时间，不过在自己休息一下之后，或是借鉴比人的代码之后就解决了。所以在前进过程中，我们时常会迷失，但是我们需要停下来想一想，或者与别人交流交流，而不是闭门造车。
