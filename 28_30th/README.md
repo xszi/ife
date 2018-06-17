@@ -1,7 +1,7 @@
 
 
 ### 第二十八天到第三十天：给爱的人发个邮件吧
-* [邮箱输入框提示](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/28_30th/mailtips.html)[`代码`](https://github.com/xszi/ife/blob/master/28_30th/mailtips.html)
+* [邮箱输入框提示演示](http://htmlpreview.github.io/?https://github.com/xszi/ife/blob/master/28_30th/mailtips.html)[`代码`](https://github.com/xszi/ife/blob/master/28_30th/mailtips.html)
 
 ### 小结：
 * 1、输入框空格去除的方法email_input.value.trim();
